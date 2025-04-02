@@ -1,0 +1,53 @@
+name: Bug report
+description: Create a report to help us improve
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: "service"
+    attributes:
+      label: "您在使用什么产品服务遇到了问题"
+      multiple: true
+      description: "让我们定位是什么产品出现了问题"
+      options:
+        - 主站/实验室
+        - API
+    validations:
+      required: true
+  - type: textarea
+    id: "expectation"
+    attributes:
+      label: "预期情况"
+      description: "描述您认为应该发生什么"
+    validations:
+      required: true
+  - type: textarea
+    id: "current"
+    attributes:
+      label: "实际情况"
+      description: "描述实际发生了什么"
+    validations:
+      required: true
+  - type: textarea
+    id: "reproduction-method"
+    attributes:
+      label: "复现方法"
+      description: "在BUG出现前执行了哪些操作"
+      placeholder: 步骤过程请以序号标明
+    validations:
+      required: true
+  - type: textarea
+    id: "more"
+    attributes:
+      label: "额外信息"
+      description: "可选"
+    validations:
+      required: false
+  - type: checkboxes
+    id: "issues"
+    attributes:
+      label: "我确认已查询历史issues"
+      description: "否则请查询后提出"
+      options:
+        - label: 是
+          required: true
