@@ -14,8 +14,8 @@ body:
 - type: textarea
   id: solution
   attributes:
-    label: 描述你希望的解决方案
-    description: "你希望发生什么"
+    label: 描述您希望的解决方案
+    description: "您希望发生什么"
   validations:
     required: true
 - type: checkboxes
