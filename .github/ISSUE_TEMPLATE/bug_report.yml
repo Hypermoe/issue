@@ -8,7 +8,7 @@ body:
     attributes:
       label: "您在使用什么产品服务遇到了问题"
       multiple: true
-      description: "让我们定位是什么产品出现了问题"
+      description: "让我们了解是什么产品出现了问题"
       options:
         - 主站/实验室
         - API
@@ -18,14 +18,14 @@ body:
     id: "expectation"
     attributes:
       label: "预期情况"
-      description: "描述您认为应该发生什么"
+      description: "可简单描述您认为应该发生什么"
     validations:
       required: true
   - type: textarea
     id: "current"
     attributes:
       label: "实际情况"
-      description: "描述实际发生了什么"
+      description: "可简单描述实际发生了什么"
     validations:
       required: true
   - type: textarea
